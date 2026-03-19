@@ -4,11 +4,11 @@
 ---
 
 ### 💻 Profile
-Passionate Software Development Apprentice with a strong focus on building clean, efficient, and scalable applications. Currently deepening my expertise in backend logic and mobile development.
+Passionate Software Development Apprentice with a strong focus on building clean, efficient, and scalable applications. Currently deepening my expertise in backend logic, mobile development, and modern software architecture.
 
 - 🎓 Currently completing my apprenticeship as **Fachinformatiker für Anwendungsentwicklung**.
-- 🛠️ Dedicated to mastering software architecture and modern development workflows.
-- 🍏 Developing primarily on **macOS** with a focus on cross-platform compatibility.
+- 🛠️ Dedicated to mastering development workflows and clean code principles.
+- 🍏 Developing primarily on **macOS** with experience in cross-platform environments.
 
 ### 🛠️ Technical Stack
 
@@ -22,11 +22,6 @@ Passionate Software Development Apprentice with a strong focus on building clean
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
-
----
-
-### 📂 Featured Project
-**[AutorennenFX25](https://github.com/D44NF/AutorennenFX25)** *An application developed in Java exploring GUI interactions and game logic.*
 
 ---
 
