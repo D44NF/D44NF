@@ -1,5 +1,5 @@
 # Daan Fenske
-**Junior Software Developer | Apprentice in Application Development (FIAE)** 🇩🇪
+**Aspiring Junior Software Developer | Apprentice in Application Development (FIAE)** 🇩🇪
 
 ---
 
