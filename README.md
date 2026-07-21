@@ -30,20 +30,21 @@ I work on web technologies both professionally and privately and enjoy learning 
 
 ### Languages
 
-![Python](https://img.shields.io/badge/Pythonyle=for-the-badge&logo=python&logoColor=ffdd54
-![C%23](https://img.shields.io/badge/C20?style=for-the-badge&logo=csharp&logoColor=white
-![Swift](https://img.shields.io/badge/Swift-F54A2A?style=for-thego=swift&logoColor=white
+![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white)
+![Swift](https://img.shields.io/badge/Swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white)
 
 ### Frontend & Design
 
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB(https://img.shields.io/badge/HTMLstyle=for-the-badge&logo=html5&logoColor=white
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=oColor=white
+!React
+https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+!Figma
 
 ### Tools
 
-![Git](https://img.shields.io/badge/Git-F05033?style=for-the-badge&logo=git&or=white
-![GitHub](https://img.shields.io/badge/GitHub-121011?style=for-the-badge&logogoColor=white
-
+https://img.shields.io/badge/Git-F05033?style=for-the-badge&logo=git&logoColor=white
+![GitHub](https://img.shields.io/badge/GitHub-121011?style=for-the-badge&logo=github&logoColor=white)
 ---
 
 ## 📚 Currently Learning
