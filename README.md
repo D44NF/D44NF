@@ -1,30 +1,62 @@
-# Daan Fenske
-**Aspiring Junior Software Developer | Apprentice in Application Development (FIAE)** 🇩🇪
+# Hi there 👋 I'm Daan
+
+💻 Software Development Apprentice (FIAE) from Germany 🇩🇪
+
+> Building practical software solutions with Python, Swift and modern web technologies.
 
 ---
 
-### 💻 Profile
-Passionate Software Development Apprentice with a strong focus on building clean, efficient, and scalable applications. Currently deepening my expertise in backend logic, mobile development, and modern software architecture.
+## 🚀 About Me
 
-- 🎓 Currently completing my apprenticeship as **Fachinformatiker für Anwendungsentwicklung**.
-- 🛠️ Dedicated to mastering development workflows and clean code principles.
-- 🍏 Developing primarily on **macOS** with experience in cross-platform environments.
+I'm currently completing my apprenticeship as a **Fachinformatiker für Anwendungsentwicklung (FIAE)** and enjoy building software that solves real-world problems.
 
-### 🛠️ Technical Stack
+My main interests are:
 
-**Programming Languages:**
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white)
-![Swift](https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white)
-
-**Web Technologies & Tools:**
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+- 🌐 Modern Web Development with **React**
+- 🎨 UI/UX Design with **Figma**
+- 🐍 Python Development & Automation
+- 🍎 iOS Applications with **Swift & SwiftUI**
+- 🏗️ Clean Code & Software Architecture
 
 ---
 
-### 📫 Connect with me
-- **GitHub:** [github.com/D44NF](https://github.com/D44NF)
-- **Location:** Germany 🇩🇪
+## 🛠️ Tech Stack
+
+### Languages
+![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&ffdd54
+![C#](https://img.shields.io/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white
+![Swift](https://img.shields.io/badge/Swifttyle=for-the-badge&logo=swift&logoColor=white
+
+### Web & Tools
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=oColor=61DAFB
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=whitehttps://img.shields.io/badge/CSS?style=for-the-badge&logo=css3&logoColor=white
+![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logote
+![Git](https://img.shields.io/badge/Git-F05033?style=for-the-badge&t&logoColor=white
+![GitHub](https:/ds.io/badge/GitHub-121011?style=for-the-badge&logo=github&logoColor=white
+
+---
+
+## 🎯 Currently Learning & Working On
+
+- 🌐 Building modern web applications with **React**
+- 🎨 Designing interfaces and prototypes with **Figma**
+- 🐍 Expanding my Python knowledge through personal projects
+- 🍎 Developing iOS apps using **SwiftUI**
+- 🏢 Working with web technologies both professionally and privately
+
+---
+
+## 📊 GitHub Stats
+
+<p align="center">
+  <img height="170" src="https://github-readme-stats.vercel.app/api?ns=true&theme=tokyonight
+  <img height="170" src="https://github-readme-stats.vercel.app/api/toplayout=compact&theme=tokyonight
+</p>
+
+---
+
+## 📫 Connect With Me
+
+- GitHub: https://github.com/D44NF
+- Location: Germany 🇩🇪
+``
