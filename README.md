@@ -64,7 +64,6 @@ I work on web technologies both professionally and privately and enjoy learning 
 - Full-Stack Development
 - Mobile App Development
 - Apple Ecosystem
-- Backend Development
 - Modern UI/UX Design
 
 ---
