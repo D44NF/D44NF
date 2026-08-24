@@ -17,9 +17,10 @@ I'm currently completing my apprenticeship as a **Fachinformatiker für Anwendun
 My current focus is on:
 
 - 🌐 Web Development with **React**
+- 🖥️ Cross-platform Desktop Applications with **Electron**
+- ⚡ Backend Development with **FastAPI**
 - 🎨 UI/UX Design with **Figma**
 - 🐍 Continuously improving my **Python** skills
-- 🍎 Building **iOS Applications** with SwiftUI
 - 🏗️ Writing clean, maintainable code and learning modern software architecture
 
 I work on web technologies both professionally and privately and enjoy learning by building real projects.
