@@ -71,6 +71,6 @@ I work on web technologies both professionally and privately and enjoy learning 
 
 ## 📫 Connect With Me
 
-- [![LinkedIn](https://img.shields.io/badge/LinkedIn-Daan_Fenske-0A66C2?style=for-the-badge&logo=linkedin&logoColor://www.linkedin.com/in/daan-fenske)
+- [![LinkedIn](https://img.shields.io/badge/LinkedIn-Daan_Fenske-blue?logo=linkedin)linkedin.com/in/daan-fenske)
 - [![GitHub](https://img.shields.io/badge/-Follow-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/D44NF)
 - Location: **Germany 🇩🇪**
