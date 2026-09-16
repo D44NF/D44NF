@@ -1,4 +1,4 @@
-![Typing Animation](https://waveify.onrender.com/api/typing/classic?text=Hi+I%27m+Daan&speed=50&color=%235995a1&backgroundColor=%231a1a1a&fontSize=20&fontFamily=monospace&width=400&height=60&cursor=true&cursorColor=%23000000&type=classic&prompt=)
+![Typing Animation](https://waveify.onrender.com/api/typing/classic?text=Hi+I%27m+Daan&speed=50&color=%235995a1&backgroundColor=%230d1117&fontSize=20&fontFamily=monospace&width=400&height=60&cursor=true&cursorColor=%23000000&type=classic&prompt=)
 
 <h3 align="center">
 Software Development Apprentice (FIAE) 🇩🇪
