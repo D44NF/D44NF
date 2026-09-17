@@ -1,0 +1,296 @@
+import os
+import time
+from datetime import datetime, timezone
+
+import requests
+
+
+API = "https://api.github.com"
+TOKEN = os.environ["GH_STATS_TOKEN"]
+
+session = requests.Session()
+session.headers.update({
+    "Authorization": f"Bearer {TOKEN}",
+    "Accept": "application/vnd.github+json",
+    "X-GitHub-Api-Version": "2022-11-28",
+})
+
+
+def github_get(url, params=None):
+    response = session.get(url, params=params, timeout=30)
+
+    if response.status_code == 403:
+        remaining = response.headers.get("X-RateLimit-Remaining")
+
+        if remaining == "0":
+            reset = int(response.headers.get("X-RateLimit-Reset", time.time()))
+            wait = max(reset - int(time.time()) + 2, 1)
+
+            print(f"Rate limit reached. Waiting {wait} seconds...")
+            time.sleep(wait)
+
+            response = session.get(url, params=params, timeout=30)
+
+    response.raise_for_status()
+    return response
+
+
+def get_all_pages(url, params=None):
+    results = []
+    page = 1
+
+    while True:
+        current_params = dict(params or {})
+        current_params["per_page"] = 100
+        current_params["page"] = page
+
+        response = github_get(url, current_params)
+        data = response.json()
+
+        if not data:
+            break
+
+        results.extend(data)
+
+        if len(data) < 100:
+            break
+
+        page += 1
+
+    return results
+
+
+def get_user():
+    return github_get(f"{API}/user").json()
+
+
+def get_repositories(username):
+    repositories = get_all_pages(
+        f"{API}/user/repos",
+        {
+            "visibility": "all",
+            "affiliation": "owner",
+            "sort": "full_name",
+            "direction": "asc",
+        },
+    )
+
+    return [
+        repo
+        for repo in repositories
+        if repo["owner"]["login"].lower() == username.lower()
+        and not repo["fork"]
+    ]
+
+
+def get_commit_stats(repo):
+    additions = 0
+    deletions = 0
+    commits = 0
+
+    commits_url = f"{API}/repos/{repo['full_name']}/commits"
+
+    page = 1
+
+    while True:
+        response = github_get(
+            commits_url,
+            {
+                "per_page": 100,
+                "page": page,
+            },
+        )
+
+        commit_list = response.json()
+
+        if not commit_list:
+            break
+
+        for commit in commit_list:
+            if len(commit.get("parents", [])) > 1:
+                continue
+
+            sha = commit["sha"]
+
+            detail = github_get(
+                f"{API}/repos/{repo['full_name']}/commits/{sha}"
+            ).json()
+
+            stats = detail.get("stats")
+
+            if not stats:
+                continue
+
+            commits += 1
+            additions += stats.get("additions", 0)
+            deletions += stats.get("deletions", 0)
+
+        if len(commit_list) < 100:
+            break
+
+        page += 1
+
+    return additions, deletions, commits
+
+
+def search_count(query):
+    response = github_get(
+        f"{API}/search/issues",
+        {
+            "q": query,
+            "per_page": 1,
+        },
+    )
+
+    return response.json()["total_count"]
+
+
+def get_contributions(username):
+    query = """
+    query($user: String!) {
+      user(login: $user) {
+        contributionsCollection {
+          contributionCalendar {
+            totalContributions
+          }
+        }
+      }
+    }
+    """
+
+    response = session.post(
+        "https://api.github.com/graphql",
+        json={
+            "query": query,
+            "variables": {
+                "user": username,
+            },
+        },
+        timeout=30,
+    )
+
+    response.raise_for_status()
+
+    data = response.json()
+
+    if "errors" in data:
+        print("GraphQL contribution error:")
+        print(data["errors"])
+        return 0
+
+    return (
+        data["data"]["user"]["contributionsCollection"]
+        ["contributionCalendar"]["totalContributions"]
+    )
+
+
+def format_number(number):
+    return f"{number:,}"
+
+
+def update_readme(stats):
+    readme_path = "README.md"
+
+    with open(readme_path, "r", encoding="utf-8") as file:
+        readme = file.read()
+
+    start_marker = "<!-- GITHUB_STATS_START -->"
+    end_marker = "<!-- GITHUB_STATS_END -->"
+
+    if start_marker not in readme or end_marker not in readme:
+        raise RuntimeError(
+            "README.md does not contain the GitHub stats markers."
+        )
+
+    stats_block = f"""<!-- GITHUB_STATS_START -->
+
+## 📊 GitHub Stats
+
+| Statistic | Count |
+|---|---:|
+| 📝 Lines Added | +{format_number(stats["additions"])} |
+| 🗑️ Lines Deleted | -{format_number(stats["deletions"])} |
+| 💻 Commits | {format_number(stats["commits"])} |
+| 📦 Repositories | {format_number(stats["repositories"])} |
+| 🔀 Pull Requests | {format_number(stats["pull_requests"])} |
+| 🐛 Issues | {format_number(stats["issues"])} |
+| 🔥 Contributions | {format_number(stats["contributions"])} |
+
+*Last updated: {stats["updated_at"]}*
+
+<!-- GITHUB_STATS_END -->"""
+
+    start = readme.index(start_marker)
+    end = readme.index(end_marker) + len(end_marker)
+
+    new_readme = readme[:start] + stats_block + readme[end:]
+
+    with open(readme_path, "w", encoding="utf-8") as file:
+        file.write(new_readme)
+
+
+def main():
+    user = get_user()
+    username = user["login"]
+
+    print(f"Collecting GitHub statistics for @{username}...")
+
+    repositories = get_repositories(username)
+
+    print(f"Found {len(repositories)} repositories.")
+
+    total_additions = 0
+    total_deletions = 0
+    total_commits = 0
+
+    for index, repo in enumerate(repositories, start=1):
+        print(
+            f"[{index}/{len(repositories)}] "
+            f"Processing {repo['full_name']}..."
+        )
+
+        additions, deletions, commits = get_commit_stats(repo)
+
+        total_additions += additions
+        total_deletions += deletions
+        total_commits += commits
+
+        print(
+            f"  +{additions:,} / -{deletions:,} "
+            f"({commits:,} commits)"
+        )
+
+    pull_requests = search_count(
+        f"author:{username} is:pr"
+    )
+
+    issues = search_count(
+        f"author:{username} is:issue"
+    )
+
+    contributions = get_contributions(username)
+
+    stats = {
+        "additions": total_additions,
+        "deletions": total_deletions,
+        "commits": total_commits,
+        "repositories": len(repositories),
+        "pull_requests": pull_requests,
+        "issues": issues,
+        "contributions": contributions,
+        "updated_at": datetime.now(timezone.utc).strftime(
+            "%Y-%m-%d %H:%M UTC"
+        ),
+    }
+
+    print("\nFinal statistics:")
+    for key, value in stats.items():
+        print(f"{key}: {value}")
+
+    update_readme(stats)
+
+    print("\nREADME.md updated successfully.")
+
+
+if __name__ == "__main__":
+    main()

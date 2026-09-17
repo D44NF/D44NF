@@ -25,6 +25,13 @@
 ![Git](https://img.shields.io/badge/-Git-1e1e2e?style=flat-square&logo=git&logoColor=white)
 ![Obsidian](https://img.shields.io/badge/-Obsidian-1e1e2e?style=flat-square&logo=obsidian&logoColor=white)
 
+<!-- GITHUB_STATS_START -->
+
+## 📊 GitHub Stats
+
+Updating...
+
+<!-- GITHUB_STATS_END -->
 </div>
 
 <br/>
