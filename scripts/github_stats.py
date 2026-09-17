@@ -202,23 +202,36 @@ def update_readme(stats):
             "README.md does not contain the GitHub stats markers."
         )
 
+    additions_k = stats["additions"] / 1000
+    deletions_k = stats["deletions"] / 1000
+
     stats_block = f"""<!-- GITHUB_STATS_START -->
 
-## 📊 GitHub Stats
-
-| Statistic | Count |
-|---|---:|
-| 📝 Lines Added | +{format_number(stats["additions"])} |
-| 🗑️ Lines Deleted | -{format_number(stats["deletions"])} |
-| 💻 Commits | {format_number(stats["commits"])} |
-| 📦 Repositories | {format_number(stats["repositories"])} |
-| 🔀 Pull Requests | {format_number(stats["pull_requests"])} |
-| 🐛 Issues | {format_number(stats["issues"])} |
-| 🔥 Contributions | {format_number(stats["contributions"])} |
-
-*Last updated: {stats["updated_at"]}*
-
-<!-- GITHUB_STATS_END -->"""
+    <p align="center">
+      <sub>GITHUB ACTIVITY</sub>
+    </p>
+    
+    <p align="center">
+      <strong>{format_number(stats["commits"])}</strong> commits
+      &nbsp;&nbsp;·&nbsp;&nbsp;
+      <strong>{format_number(stats["contributions"])}</strong> contributions
+      &nbsp;&nbsp;·&nbsp;&nbsp;
+      <strong>{format_number(stats["repositories"])}</strong> repositories
+    </p>
+    
+    <p align="center">
+      <code>+{additions_k:.1f}K</code> added
+      &nbsp;&nbsp;
+      <code>−{deletions_k:.1f}K</code> deleted
+      &nbsp;&nbsp;
+      <code>{format_number(stats["pull_requests"])}</code> PRs
+    </p>
+    
+    <p align="center">
+      <sub>updated daily · {datetime.now(timezone.utc).strftime("%d.%m.%Y")}</sub>
+    </p>
+    
+    <!-- GITHUB_STATS_END -->"""
 
     start = readme.index(start_marker)
     end = readme.index(end_marker) + len(end_marker)
@@ -227,7 +240,6 @@ def update_readme(stats):
 
     with open(readme_path, "w", encoding="utf-8") as file:
         file.write(new_readme)
-
 
 def main():
     user = get_user()
