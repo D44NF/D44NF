@@ -1,76 +1,15 @@
-![Typing Animation](https://waveify.onrender.com/api/typing/classic?text=Hi+I%27m+Daan&speed=50&color=%235995a1&backgroundColor=%230d1117&fontSize=40&fontFamily=monospace&width=400&height=60&cursor=true&cursorColor=%23000000&type=classic&prompt=)
+<div align="center">
 
-<h3 align="center">
-Software Development Apprentice (FIAE) 🇩🇪
-</h3>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1e1e2e,100:89b4fa&height=160&section=header&text=Daan&fontSize=45&fontColor=ffffff&animation=fadeIn&desc=Full-Stack%20Development%20%C2%B7%20FIAE%20Apprentice&descAlignY=65&descSize=16" width="100%"/>
 
-<p align="center">
-Passionate about React, Python, Swift and building practical software solutions.
-</p>
+<br/>
 
----
+![Python](https://img.shields.io/badge/-Python-1e1e2e?style=flat-square&logo=python&logoColor=white)
+![C#](https://img.shields.io/badge/-C%23-1e1e2e?style=flat-square&logo=csharp&logoColor=white)
+![Swift](https://img.shields.io/badge/-Swift-1e1e2e?style=flat-square&logo=swift&logoColor=white)
+![React](https://img.shields.io/badge/-React-1e1e2e?style=flat-square&logo=react&logoColor=white)
+![Git](https://img.shields.io/badge/-Git-1e1e2e?style=flat-square&logo=git&logoColor=white)
 
-## 💻 About Me
+</div>
 
-I'm currently completing my apprenticeship as a **Fachinformatiker für Anwendungsentwicklung (FIAE)**.
-
-My current focus is on:
-
-- 🌐 Web Development with **React**
-- 🖥️ Cross-platform Desktop Applications with **Electron**
-- ⚡ Backend Development with **FastAPI**
-- 🎨 UI/UX Design with **Figma**
-- 🐍 Continuously improving my **Python** skills
-- 🏗️ Writing clean, maintainable code and learning modern software architecture
-
-I work on web technologies both professionally and privately and enjoy learning by building real projects.
-
----
-
-## 🛠️ Tech Stack
-
-### Languages
-
-![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white)
-![Swift](https://img.shields.io/badge/Swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white)
-
-### Frontend & Design
-
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
-![MaterialUI](https://img.shields.io/badge/Material%20UI-%23FFFFFF.svg?style=for-the-badge&logo=MUI&logoColor=#007FFF)
-![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
-
-### Tools
-
-![Git](https://img.shields.io/badge/Git-F05033?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-121011?style=for-the-badge&logo=github&logoColor=white)
----
-
-## 📚 Currently Learning
-
-- React & modern frontend development
-- UI/UX design with Figma
-- Python for automation and backend development
-- SwiftUI and native iOS development
-- Software architecture and clean code principles
-
----
-
-## 🚀 Interests
-
-- Full-Stack Development
-- Mobile App Development
-- Apple Ecosystem
-- Modern UI/UX Design
-
----
-
-## 📫 Connect With Me
-
-- [![LinkedIn](https://img.shields.io/badge/Daan_Fenske-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/daan-fenske)
-- [![GitHub](https://img.shields.io/badge/-Follow-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/D44NF)
-- Location: **Germany 🇩🇪**
+<br/>
