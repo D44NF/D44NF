@@ -29,7 +29,17 @@
 
 ## 📊 GitHub Stats
 
-Updating...
+| Statistic | Count |
+|---|---:|
+| 📝 Lines Added | +165,226 |
+| 🗑️ Lines Deleted | -7,602 |
+| 💻 Commits | 1,143 |
+| 📦 Repositories | 13 |
+| 🔀 Pull Requests | 20 |
+| 🐛 Issues | 0 |
+| 🔥 Contributions | 813 |
+
+*Last updated: 2026-09-17 20:32 UTC*
 
 <!-- GITHUB_STATS_END -->
 </div>
