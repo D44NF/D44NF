@@ -27,21 +27,31 @@
 
 <!-- GITHUB_STATS_START -->
 
-## 📊 GitHub Stats
-
-| Statistic | Count |
-|---|---:|
-| 📝 Lines Added | +167,812 |
-| 🗑️ Lines Deleted | -8,821 |
-| 💻 Commits | 1,147 |
-| 📦 Repositories | 13 |
-| 🔀 Pull Requests | 20 |
-| 🐛 Issues | 0 |
-| 🔥 Contributions | 816 |
-
-*Last updated: 2026-09-17 21:24 UTC*
-
-<!-- GITHUB_STATS_END -->
+    <p align="center">
+      <sub>GITHUB ACTIVITY</sub>
+    </p>
+    
+    <p align="center">
+      <strong>1,150</strong> commits
+      &nbsp;&nbsp;·&nbsp;&nbsp;
+      <strong>818</strong> contributions
+      &nbsp;&nbsp;·&nbsp;&nbsp;
+      <strong>13</strong> repositories
+    </p>
+    
+    <p align="center">
+      <code>+168.6K</code> added
+      &nbsp;&nbsp;
+      <code>−8.9K</code> deleted
+      &nbsp;&nbsp;
+      <code>20</code> PRs
+    </p>
+    
+    <p align="center">
+      <sub>updated daily · 18.09.2026</sub>
+    </p>
+    
+    <!-- GITHUB_STATS_END -->
 </div>
 
 <br/>
