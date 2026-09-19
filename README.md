@@ -27,31 +27,31 @@
 
 <!-- GITHUB_STATS_START -->
 
-    <p align="center">
-      <sub>GITHUB ACTIVITY</sub>
-    </p>
-    
-    <p align="center">
-      <strong>1,151</strong> commits
-      &nbsp;&nbsp;·&nbsp;&nbsp;
-      <strong>818</strong> contributions
-      &nbsp;&nbsp;·&nbsp;&nbsp;
-      <strong>13</strong> repositories
-    </p>
-    
-    <p align="center">
-      <code>+168.6K</code> added
-      &nbsp;&nbsp;
-      <code>−8.9K</code> deleted
-      &nbsp;&nbsp;
-      <code>20</code> PRs
-    </p>
-    
-    <p align="center">
-      <sub>updated daily · 19.09.2026</sub>
-    </p>
-    
-    <!-- GITHUB_STATS_END -->
+<p align="center">
+  <sub>GITHUB ACTIVITY</sub>
+</p>
+
+<p align="center">
+  <strong>1,153</strong> commits
+  &nbsp;&nbsp;·&nbsp;&nbsp;
+  <strong>820</strong> contributions
+  &nbsp;&nbsp;·&nbsp;&nbsp;
+  <strong>13</strong> repositories
+</p>
+
+<p align="center">
+  <code>+168.7K</code> added
+  &nbsp;&nbsp;
+  <code>−9.0K</code> deleted
+  &nbsp;&nbsp;
+  <code>21</code> PRs
+</p>
+
+<p align="center">
+  <sub>updated daily · 19.09.2026</sub>
+</p>
+
+<!-- GITHUB_STATS_END -->
 </div>
 
 <br/>
