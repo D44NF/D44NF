@@ -24,34 +24,3 @@
 ![Figma](https://img.shields.io/badge/-Figma-1e1e2e?style=flat-square&logo=figma&logoColor=white)
 ![Git](https://img.shields.io/badge/-Git-1e1e2e?style=flat-square&logo=git&logoColor=white)
 ![Obsidian](https://img.shields.io/badge/-Obsidian-1e1e2e?style=flat-square&logo=obsidian&logoColor=white)
-
-<!-- GITHUB_STATS_START -->
-
-<p align="center">
-  <sub>GITHUB ACTIVITY</sub>
-</p>
-
-<p align="center">
-  <strong>1,158</strong> commits
-  &nbsp;&nbsp;·&nbsp;&nbsp;
-  <strong>822</strong> contributions
-  &nbsp;&nbsp;·&nbsp;&nbsp;
-  <strong>13</strong> repositories
-</p>
-
-<p align="center">
-  <code>+173.7K</code> added
-  &nbsp;&nbsp;
-  <code>−9.5K</code> deleted
-  &nbsp;&nbsp;
-  <code>21</code> PRs
-</p>
-
-<p align="center">
-  <sub>updated daily · 20.09.2026</sub>
-</p>
-
-<!-- GITHUB_STATS_END -->
-</div>
-
-<br/>
